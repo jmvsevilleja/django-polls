@@ -6,10 +6,13 @@ Prereq
 
 Create a new virtual environment by running:
 `python3 -m venv ~/.virtualenvs/djangodev`
+
 to activate it:
 `source ~/.virtualenvs/djangodev/bin/activate`
+
 install Django
 `pip install Django`
+
 check Django Version
 `python -m django --version`
 
@@ -21,5 +24,8 @@ Run a server
 
 Apply database migrations
 `python manage.py migrate`
+
+Add app
+`python manage.py startapp polls`
 
 
