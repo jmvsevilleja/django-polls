@@ -6,9 +6,11 @@ Prereq
 
 Create a new virtual environment by running:
     `python3 -m venv ~/.virtualenvs/djangodev`
-
+    win: `mkvirtualenv myproject`
+    
 to activate it:
     `source ~/.virtualenvs/djangodev/bin/activate`
+    win: `workon myproject`
 
 install Django
     `pip install Django`
@@ -40,3 +42,5 @@ Check Problems
 Interactive Python Shell
     `python manage.py shell`
 
+Running tests
+    `python manage.py test polls`
