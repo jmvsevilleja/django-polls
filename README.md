@@ -7,7 +7,7 @@ Prereq
 Create a new virtual environment by running:
     `python3 -m venv ~/.virtualenvs/djangodev`
     win: `mkvirtualenv myproject`
-    
+
 to activate it:
     `source ~/.virtualenvs/djangodev/bin/activate`
     win: `workon myproject`
@@ -44,3 +44,18 @@ Interactive Python Shell
 
 Running tests
     `python manage.py test polls`
+
+Creating Package (setuptools pip)
+    `python setup.py sdist`
+
+Installing Package
+    `pip install django-polls/dist/django-polls-alpha-0.1.tar.gz`
+
+Uninstall Package
+    `pip uninstall django-polls-alpha`
+
+Uploading dist to pypi (twine)
+    `python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+
+Installing from pypi
+    `pip install -i https://test.pypi.org/simple/ django-polls-alpha==0.1`
