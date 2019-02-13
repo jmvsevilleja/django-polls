@@ -4,25 +4,32 @@ Prereq
 - Python 3
 - Pip
 
-Create a new virtual environment by running:
+Create Virtual Environment:
     `python3 -m venv ~/.virtualenvs/djangodev`
     win: `mkvirtualenv myproject`
 
-to activate it:
+Activate Environment:
     `source ~/.virtualenvs/djangodev/bin/activate`
     win: `workon myproject`
 
-install Django
+Install Django
     `pip install Django`
 
-check Django Version
+Check Django Version
     `python -m django --version`
+
+Update Django Latest Version
+    `pip install django --upgrade`
 
 Create project
     `django-admin startproject mysite`
 
 Run a server
     `python manage.py runserver 1.2.3.4:8080`
+
+Kill server
+    `ps -ef | grep python`
+    `kill -9 process_id`
 
 Apply database migrations
     `python manage.py migrate`
@@ -65,3 +72,9 @@ List all packages
 
 Show package details
     `pip show <package-name>`
+
+
+ADMIN
+
+Creating admin user
+    `python manage.py createsuperuser`
