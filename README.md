@@ -59,3 +59,9 @@ Uploading dist to pypi (twine)
 
 Installing from pypi
     `pip install -i https://test.pypi.org/simple/ django-polls-alpha==0.1`
+
+List all packages
+    `pip list`
+
+Show package details
+    `pip show <package-name>`
