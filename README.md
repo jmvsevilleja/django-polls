@@ -78,3 +78,8 @@ ADMIN
 
 Creating admin user
     `python manage.py createsuperuser`
+Locate Django source files
+    `python -c "import django; print(django.__path__)"`
+
+
+TWIG
