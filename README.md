@@ -30,6 +30,13 @@ Run a server
 Kill server
     `ps -ef | grep python`
     `kill -9 process_id`
+    
+
+Kill port
+    `lsof -t -i:4444`
+    win: `netstat -ano | findstr :<yourPortNumber>`
+    `kill lsof -t -i:4444`
+    win: `taskkill /PID <typeyourPIDhere> /F`
 
 Apply database migrations
     `python manage.py migrate`
